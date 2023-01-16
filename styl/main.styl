@@ -1,0 +1,215 @@
+menuColor = #827FFF
+
+img:hover
+	border: solid 3px menuColor
+
+body
+	height 100vh
+	
+	display flex
+	align-items center
+	justify-content center
+	font-size 16px
+	text-align center
+	flex-direction column
+	padding 5px
+	.centralBlock
+		width 100%
+		min-height 700px
+		min-width 100px
+		padding 0px
+		margin 0px
+		background-color white
+		display flex
+		flex-direction column
+
+
+		.menuFlex
+			padding 20px;
+			display flex
+			margin-bottom 10px
+			flex-direction row
+			justify-content space-around
+			background-color menuColor
+			border-bottom lightGrey 4px solid
+			span
+				font-weight: bold
+				
+			.menuItem
+				a
+					text-decoration none
+					color white
+					
+				a:hover
+					color #EEEEEE	
+
+		.presentBlock
+			padding 10px
+			display flex
+			flex-direction row
+			justify-content space-evenly
+			align-items center
+			border lightGrey 2px solid
+			
+			.presentItem
+				font-size 18px;
+				color black
+				width 48%
+			img
+				width 48%
+				border menuColor 1px solid
+				height 100%
+		.defaultText
+			p
+				margin 30px
+				display flex
+				font-size 24px
+				justify-content center
+		
+		.imageBoard
+			display flex
+			flex-direction row
+			padding 1%
+			border-bottom lightGrey 4px solid
+			justify-content space-around
+			img
+				width 15%
+				border-radius 4px
+			minheight 500px
+
+		.studentsBlock
+			display flex
+			flex-direction row
+			margin-top 10px
+			.studentBlock
+				display flex
+				flex-direction column
+				width 30%
+				margin 2%
+				height 100%
+				justify-content flex-start
+				align-content space-between
+				img
+					width 100%
+					
+					border-radius 10px
+				.description
+					font-size 14px
+					color menuColor
+				hr
+					width 60%
+					size 4px
+					align center
+					color menuColor
+				.review
+					width 100%
+					font-size 22px
+					color black
+					font-style italic
+			
+		.contactBlock
+			display flex
+			background-color lightGrey
+			justify-content space-evenly
+			flex-direction row
+			margin-top 40px
+			margin bottom 5px
+			width 100%
+			.contact
+				font-size 12px
+				color black
+				margin 10px;
+
+		.siteTitle
+			display flex
+			justify-content center
+			flex-direction column
+			align-items center
+			font-size 36px
+			color menuColor
+			width 100%
+
+		.galleryBlock
+			padding 10px
+			display flex
+			flex-direction row
+			flex-wrap wrap
+			background-color menuColor
+			justify-content space-around
+			img
+				margin 4px;
+				width 15%
+		.info
+			display flex
+			flex-direction row
+			font-size 16px
+			justify-content space-between
+			background-color menuColor
+			margin-left 15px
+			text-align justify
+			margin-top 20px
+			ul
+				color white
+				width 45%
+				li
+					color white
+		.formBlock form
+			display flex
+			margin-top 25px
+			flex-direction column
+			background-color lightGrey
+			justify-content flex-start
+			margin-left 15px
+			fieldset 
+				margin 10px
+		
+table
+	tr
+		td
+			border 2px solid black
+
+@media(max-width: 700px)
+	body
+		.centralBlock
+			.menuFlex
+				flex-direction column
+			.presentBlock
+				flex-direction column
+			.imageBoard
+				flex-direction row
+				flex-wrap wrap
+				justify-content space-evenly
+				align-items center
+				img
+					width 45%
+			.studentsBlock
+				flex-direction column
+				align-items center
+				.studentBlock
+					width 80%
+			.contactBlock
+				flex-direction column
+				align-items center
+				.contact
+					font-size 16px
+					width 80%
+			table
+				margin 20px
+			.info
+				flex-direction column
+				align-items center
+			.siteTitle
+				font-size 28px
+			.galleryBlock
+				flex-direction column
+				img
+					width 80%
+				align-items center
+								
+			
+
+
+					
+
+
+	

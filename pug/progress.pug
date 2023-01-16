@@ -1,0 +1,52 @@
+extends template
+block variables 
+    -	var title = 'Успеваемость'
+    -   var i = 1
+    -   var fios = ["Черная М.Н.", "Белый И.К."]
+block content
+    .siteTitle
+        p На этой странице вы можете посмотреть данные об успеваемости наших семиклассников. По всем вопросам вы всегда можете проконсультироваться, обратившись по контактам, указанным внизу страницы.
+    table
+        tr
+            th Класс
+            th ФИО
+            th Средний балл по итоговым оценкам
+            th Процент посещаемости
+        while i < 31
+            tr
+                td 7
+                td= fios[i % 2]
+                td= i % 5 + 1
+                td 100
+            -   i++
+    .info
+        ul Опции фильтрации:
+            li Найти отличников - найти всех учеников со средним баллом 5,00
+            li Найти учеников без прогулов - найти всех учеников со 100%-ной посещаемостью
+            li Найти неаттестованных - найти всех учеников с посещаемостью < 50% или со средним баллом < 2,50
+        ul Искать можно
+            li Среди всех учеников
+            li По классу
+    .formBlock
+        form
+            fieldset
+                select(id="requestType")
+                    option Выберете тип запроса
+                    option Найти отличников
+                    option Найти учеников без прогулов
+                    option Найти неаттестованных
+            fieldset
+                select(id="graphicRequestType")
+                    option Выберете какую диаграмму построить
+                    option Диаграмма посещаемости
+                    option Диаграмма успеваемости
+                    option Диаграмма неуспеваемости
+            fieldset
+                label(for="requestType") Искать среди всех классов
+                input(type="radio", name="all", value="allClasses")
+                br
+                label Искать среди класса с буквой
+                input(type="text", name="inputLetter", placeholder="Введите букву")
+                input(type="radio", name="all", value="specificClass")
+            fieldset
+                input(type="submit", value="Искать")

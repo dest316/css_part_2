@@ -1,0 +1,35 @@
+extends template
+block variables
+	-	var title = 'Главная страница'
+block content
+	.presentBlock
+		img(src="img/school.jpg")
+		img(src="img/school1.jpg")
+	.siteTitle
+		p Проверить успеваемость, посмотреть фотографии и ознакомиться с информацией о нашей школе вы можете на нашем сайте. Приятного использования!
+	.defaultText 
+		p Наши партнеры
+	.imageBoard 
+		img(src="img/slavda.png")
+		img(src="img/coursera.png")
+		img(src="img/dns.png")
+		img(src="img/JetBrains.jpg")
+		img(src="img/hp.png")
+		img(src="img/vk.png")
+	.studentsBlock
+		.studentBlock
+			img(src="img/student1.jpg")
+			.description Ученик 7а класса, чемпион олимпиады по русскому языку в 2020 году
+			hr 
+			.review Благодаря моей школе я смог получить грант на развитие своего проекта, и сделать этот мир лучше!
+		.studentBlock
+			img(src="img/student2.jpg")
+			.description Ученик 7б класса, трехкратный чемпион города Владивосток по хоккею
+			hr
+			.review Стараниями тренеров моей школы, настоящих профессионалов своего дела, я смог добиться того, чего добился! Люблю свою школу.
+		.studentBlock
+			img(src="img/student3.jpg")
+			.description Ученица 7в класса, староста школы, помощник директора по взаимодействию с учениками
+			hr
+			.review Моя школа позволяет мне получить уникальный управленческий опыт, который поможет мне в будущем в моем карьерном росте. Очень благодарна родителям, за то, что отправили меня сюда учиться!
+		

@@ -1,0 +1,32 @@
+mixin createMenuBar (title)
+    .menuFlex
+        .menuItem
+            if title == 'Главная страница'
+                a(href="index.html")
+                    span Главная страница
+            else
+                a(href="index.html") На главную
+        .menuItem
+            if title == "О сайте"
+                a(href="about.html")
+                    span О сайте
+            else
+                a(href="about.html") О сайте
+        .menuItem
+            if title == 'Успеваемость'
+                a(href="progress.html")
+                    span Успеваемость
+            else
+                a(href="progress.html") Успеваемость
+        .menuItem
+            if title == 'Галерея'
+                a(href="gallery.html")
+                    span Галерея
+            else
+                a(href="gallery.html") Галерея
+        
+mixin createImageBlock (url, imageWidth)
+    .imagesFlexItem(width = imageWidth)
+        img(src = url)        
+        
+        

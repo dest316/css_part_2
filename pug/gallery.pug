@@ -1,0 +1,11 @@
+extends template
+block variables 
+    -	var title = 'Галерея'
+    -   var i = 1
+block content
+    .siteTitle 
+        p На этой странице изображены самые захватывающие моменты из жизни семиклассников нашей замечательной школы!
+    .galleryBlock
+        while i <= 15
+            img(src="img/student" + i +".jpg")
+            -   i += 1
